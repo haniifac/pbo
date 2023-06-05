@@ -12,6 +12,7 @@
         <module>customer-service</module>
         <module>product-service</module>
         <module>notification-service</module>
+        <module>config-service</module>
     </modules>
     <packaging>pom</packaging>
 
