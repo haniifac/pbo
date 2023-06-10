@@ -15,7 +15,7 @@ class NotificationController {
 	@Autowired
 	private NotificationService notificationService;
 
-	@PostMapping("/notifications")
+		@PostMapping("/notifications")
 	ResponseEntity<String> createCustomer(@RequestBody Notification notification) {
 		notificationService.sendEmailNotification(notification);
 		return ResponseEntity.ok().body("Notifications created successfully");

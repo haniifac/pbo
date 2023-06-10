@@ -1,3 +1,7 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
 management:
   endpoint:
     health:
@@ -24,7 +28,7 @@ resilience4j:
         slidingWindowType: COUNT_BASED
         waitDurationInOpenState: 5s
 server:
-  port: 8070
+  port: 0
 spring:
   jpa:
     open-in-view: false
